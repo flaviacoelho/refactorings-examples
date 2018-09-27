@@ -1,7 +1,7 @@
-package main.java.b;
+package main.java.a;
 
 public class C {
 	public int k() {
-		return 10;
+		return 20;
 	}
 }

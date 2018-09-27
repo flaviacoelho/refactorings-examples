@@ -1,1 +1,1 @@
-Refactoring code examples!
+Refactorings in the code!

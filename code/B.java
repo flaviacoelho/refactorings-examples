@@ -1,7 +1,9 @@
 package main.java;
 
 public class B extends A {
-	public int k() {
-		return 42;
+	protected int x = 42;
+    
+	public int test() {
+		return new B().m();
 	}
 }

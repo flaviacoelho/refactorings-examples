@@ -1,8 +1,9 @@
 package main.java;
 
 public class A {
-	public int k() {
-		return 23;
+	protected int x = 23;
+	
+	public int m() { 
+		return x; 
 	}
-
 }

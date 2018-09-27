@@ -1,13 +1,13 @@
 package main.java;
 
-public class C extends B {
-
+public class C extends A {
+	class B { 
+		public int getTamanho() { 
+			return 42; 
+		} 
+	}
 	public int test() {
-		return m();
+		return new C().m();
+		
 	}
-	
-	public int m() {
-		return super.k(); 
-	}
-
 }

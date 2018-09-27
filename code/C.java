@@ -1,13 +1,4 @@
-package main.java;
+package main.java.p2;
 
-public class C extends A {
-	class B { 
-		public int getTamanho() { 
-			return 42; 
-		} 
-	}
-	public int test() {
-		return new C().m();
-		
-	}
+public class C {
 }

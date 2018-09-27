@@ -1,13 +1,7 @@
-package main.java;
+package main.java.p1;
 
-public class B extends A {
-	protected int x = 42;
-    
-	public int m() { 
-		return x; 
-	}
-	
-	public int test() {
-		return new B().m();
-	}
+import main.java.p2.*;
+
+public class B extends C {
 }
+

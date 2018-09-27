@@ -1,7 +1,9 @@
-package main.java.p1;
+package main.java.a;
 
-import main.java.p2.*;
+import main.java.b.*;
 
 public class B extends C {
+	public int test() {
+		return k();
+	}
 }
-

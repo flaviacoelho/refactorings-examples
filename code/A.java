@@ -1,5 +1,7 @@
-package main.java.p1;
+package main.java.a;
 
-public class A extends B{
+public class A {
+	public int k() {
+		return 20;
+	}
 }
-

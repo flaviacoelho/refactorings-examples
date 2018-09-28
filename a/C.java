@@ -1,6 +1,6 @@
 package main.java.a;
 
-public class A {
+public class C {
 	public int k() {
 		return 20;
 	}

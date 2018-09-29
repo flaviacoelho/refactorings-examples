@@ -1,7 +1,12 @@
 package main.java.p2;
 
+import main.java.p1.A;
+
 public class B extends A {
-	public long m() {
-	    return new B().k(2);
-	  }
+  protected long n(  int a){
+    return 0;
+  }
+  public long m(){
+    return this.k(2);
+  }
 }

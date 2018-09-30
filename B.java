@@ -7,4 +7,7 @@ public class B {
   public long test() {
     return k(2);
   }
+  protected long k(int a) {
+    return 2;
+  }
 }

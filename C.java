@@ -1,8 +1,8 @@
 package main.java;
 
-public class C extends B {
-	  private int k = 20;
-	  public int test() {
-	    return super.k;
+public class C extends A {
+	  public int k = 20;
+	  public long test() {
+	    return k;
 	  }    
 }

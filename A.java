@@ -1,5 +1,8 @@
 package main.java;
 
 public class A {
-	  public int k = 10; 
+	  public B b;
+	  protected long k(int a) {
+	    return 2;
+	  }
 }

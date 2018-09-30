@@ -7,5 +7,8 @@ public class A {
 	  private int k(int l) {
 	    return 2; 
 	  }
+	  public int m() {
+		    return k(2);
+		  }   
 }
 	

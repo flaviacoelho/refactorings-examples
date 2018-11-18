@@ -1,0 +1,113 @@
+[{ 
+    "id": 1,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "73fa25d00ef11615b0322a294d1bc5ad21d48a31",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/73fa25d00ef11615b0322a294d1bc5ad21d48a31",
+    "author": "ufcg-spg",
+    "time": "9/27/18", 
+    "refactorings": [{ 
+        "type": "Rename Class",
+        "description": "Rename Class	main.java.a.A renamed to main.java.a.C",
+        "comment": "Behavior changed - After the refactoring, the method test returns 20 instead of 10",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 2,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "505c6fa16eba14d29e2c6f65fb422d9725862602",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/505c6fa16eba14d29e2c6f65fb422d9725862602",
+    "author": "ufcg-spg",
+    "time": "9/29/18", 
+    "refactorings": [{ 
+        "type": "Push Down Method",
+        "description": "Push Down Method	public m() : long from class main.java.p2.A to public m() : long from class main.java.p1.B",
+        "comment": "Pushing down a method to a class in another package may shadow a Class declaration leading to a behavioral change - Before the transformation, method m() yields 1, but after that, it yields 0.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }, { 
+        "type": "Push Down Method",
+        "description": "Push Down Method	public m() : long from class main.java.p2.A to public m() : long from class main.java.p2.B",
+        "comment": "Pushing down a method to a class in another package may shadow a Class declaration leading to a behavioral change - Before the transformation, method m() yields 1, but after that, it yields 0.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 3,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "f706be1cb4907724096bac04e07f3be889d4d33d",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/f706be1cb4907724096bac04e07f3be889d4d33d",
+    "author": "ufcg-spg",
+    "time": "9/29/18", 
+    "refactorings": [{ 
+        "type": "Rename Method",
+        "description": "Rename Method	protected n(a int) : long renamed to protected k(a int) : long in class main.java.p2.B",
+        "comment": "Rename n to k - the transformation changes behavior. After the transformation the m method returns 0 instead of 1.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 4,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "42674a9d4f34af60328e8a857301d40f24f75ff0",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/42674a9d4f34af60328e8a857301d40f24f75ff0",
+    "author": "ufcg-spg",
+    "time": "11/18/18", 
+    "refactorings": [{ 
+        "type": "Push Down Attribute",
+        "description": "Push Down Attribute	public k : int from class main.java.B to class main.java.C",
+        "comment": "Pushing down a field that hides other field may changes program behavior - After the transformation, the method test returns 10 instead of 20. The transformation changes program behavior.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 5,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "7a5c5f63f6c9e8a0764cd7efa474634d4cf639f7",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/7a5c5f63f6c9e8a0764cd7efa474634d4cf639f7",
+    "author": "ufcg-spg",
+    "time": "9/29/18", 
+    "refactorings": [{ 
+        "type": "Pull Up Method",
+        "description": "Pull Up Method	public m() : int from class main.java.B to public m() : int from class main.java.A",
+        "comment": "Pulling up a method enables overloading of a private method changing program behavior - After the transformation, the test method returns 2 instead of 1.",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 6,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "9a9cd138b9f268c2f0749a2556dd114e57278bfe",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/9a9cd138b9f268c2f0749a2556dd114e57278bfe",
+    "author": "ufcg-spg",
+    "time": "11/18/18", 
+    "refactorings": [{ 
+        "type": "Pull Up Attribute",
+        "description": "Pull Up Attribute	public k : int from class main.java.B to class main.java.A",
+        "comment": "Apply the pull up field refactoring to a field f moves all fields f of the subclasses to the super class. If one of the fields is initialized with different value, the behavior of the program may change - The method test returns 10 instead of 20. The refactoring changes the program behavior.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }, { 
+    "id": 7,
+    "repository": "https://github.com/flaviacoelho/refactorings-examples.git",
+    "sha1": "d4c814d3fbee55a55ffc73fec38cc79145b99bf4",
+    "url": "https://github.com/flaviacoelho/refactorings-examples/commit/d4c814d3fbee55a55ffc73fec38cc79145b99bf4",
+    "author": "ufcg-spg",
+    "time": "9/29/18", 
+    "refactorings": [{ 
+        "type": "Move Method",
+        "description": "Move Method	protected k(a int) : long from class main.java.A to protected k(a int) : long from class main.java.B",
+        "comment" : "Moving a method to another class may change program behavior due to an overloading - Applying the move method refactoring to move k(int) to B - The transformation changes behavior. After the transformation, the test() method returns 2 instead of 1.",
+        "validation": "FP",
+        "detectionTools": "RefactoringMiner",
+        "validators": null      
+    }]
+  }    
+]

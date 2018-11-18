@@ -1,4 +1,4 @@
-Dataset of transformations detected by RMiner!
+Dataset of transformations detected by RefactoringMiner!
 The file format is similar to http://refactoring.encs.concordia.ca/oracle/api.php?json [Tsantalis et al. 2018].
 
 ##### Reference
